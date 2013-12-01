@@ -1,0 +1,10 @@
+<div class="navbar navbar-inverse navbar-fixed-bottom shdw">
+    <div class="container">
+        <a class="navbar-brand">Gbook Project</a>
+        {% if pageName == "main" %}
+            <div class="pgn_navigation">
+                {{ knp_pagination_render(pagination) }}
+            </div>
+        {% endif %}
+    </div>
+</div>

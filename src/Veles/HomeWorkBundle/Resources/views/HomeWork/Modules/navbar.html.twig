@@ -1,0 +1,17 @@
+<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <a class="navbar-brand">Gbook Project</a>
+        </div>
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                <li {% if pageName == "main" %}class="active"{% endif %}>
+                    <a href="{{ path('_main') }}">Home</a>
+                </li>
+                <li {% if pageName == "comment" %}class="active"{% endif %}>
+                    <a href="{{ path('_comment') }}">Comments</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>

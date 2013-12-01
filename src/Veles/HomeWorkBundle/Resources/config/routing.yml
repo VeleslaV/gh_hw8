@@ -1,0 +1,12 @@
+_main:
+        pattern: /
+        defaults: {_controller: VelesHomeWorkBundle:HomeWork:main}
+_comment:
+        pattern: /comment/
+        defaults: {_controller: VelesHomeWorkBundle:HomeWork:oneComment}
+_comment_success:
+        pattern: /success/
+        defaults: {_controller: VelesHomeWorkBundle:HomeWork:successAdd}
+_single_comment:
+        pattern: /comment/{cid}
+        defaults: {_controller: VelesHomeWorkBundle:HomeWork:oneComment}
