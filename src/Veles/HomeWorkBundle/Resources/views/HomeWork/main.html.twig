@@ -54,7 +54,7 @@
                         </div>
                         <div class="clr"></div>
                     </div>
-                    <div class="message_wrapper">{{ comment.message[:150] }} ...</div>
+                    <div class="message_wrapper">{{ comment.message|cutString(200) }}</div>
                     <a class="btn btn-primary" href="{{ path('_single_comment', {'cid': comment.id}) }}">More &raquo;</a>
                 </div>
             {% endfor %}
